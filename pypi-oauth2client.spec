@@ -4,7 +4,7 @@
 #
 Name     : pypi-oauth2client
 Version  : 4.1.3
-Release  : 59
+Release  : 60
 URL      : https://files.pythonhosted.org/packages/a6/7b/17244b1083e8e604bf154cf9b716aecd6388acd656dd01893d0d244c94d9/oauth2client-4.1.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a6/7b/17244b1083e8e604bf154cf9b716aecd6388acd656dd01893d0d244c94d9/oauth2client-4.1.3.tar.gz
 Summary  : OAuth 2.0 client library
@@ -14,9 +14,6 @@ Requires: pypi-oauth2client-license = %{version}-%{release}
 Requires: pypi-oauth2client-python = %{version}-%{release}
 Requires: pypi-oauth2client-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: oauth2client
-Provides: oauth2client-python
-Provides: oauth2client-python3
 BuildRequires : pypi(httplib2)
 BuildRequires : pypi(pyasn1)
 BuildRequires : pypi(pyasn1_modules)
@@ -67,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641464365
+export SOURCE_DATE_EPOCH=1651102850
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
